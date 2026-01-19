@@ -1,0 +1,7 @@
+.hilightSpan {
+  height: 100px;
+  padding: 10px;
+  background-color: rgb(228, 228, 54);
+  color: rgb(215, 44, 101);
+  border-radius: 20px;
+}
