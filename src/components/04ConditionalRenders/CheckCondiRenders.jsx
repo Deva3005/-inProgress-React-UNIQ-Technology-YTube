@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CheckCondiRenders = () => {
+const CheckCondiRenders = ({ currentState }) => {
   const [loggedIn, setLogged] = useState(true);
 
   // Conditional Rendering with IF-ELSE [Nested Components]
@@ -20,6 +20,36 @@ const CheckCondiRenders = () => {
     );
   } else {
     message = <p>Error</p>;
+  }
+
+  // Nested Components [Loading...]
+  function Loading() {
+    return <h3>Things are Loaded 🍃</h3>;
+  }
+
+  function Success() {
+    return <h3>Things are Success ✅</h3>;
+  }
+
+  function Warning() {
+    return <h3>Things are Warning ⚠️</h3>;
+  }
+
+  let response;
+  // SWITCH case [Conditional Re-Render]
+  switch (currentState) {
+    case "Loading":
+      response = <Loading />;
+      break;
+    case "Success":
+      response = <Success />;
+      break;
+    case "Warning":
+      response = <Warning />;
+      break;
+    default:
+      console.log("Check Some Error");
+      break;
   }
 
   return (
@@ -49,6 +79,7 @@ const CheckCondiRenders = () => {
       <h4>{message}</h4>
 
       {/* [4] Conditional Via Switch Case... */}
+      {response}
     </>
   );
 };

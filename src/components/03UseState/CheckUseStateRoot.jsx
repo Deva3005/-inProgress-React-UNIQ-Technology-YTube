@@ -27,15 +27,15 @@ const CheckUseStateRoot = () => {
       <MyHeading>
         {count}
         <MyButton
-          // SetState Re_Render the page
+          // SetState Re_Render the Component
           // If is called in Invoked State :: Infinite Re-Render
           // Calling Function Directly cause
-          //   onClick={setcount(count + 1)} // Too Many Renders
+          // onClick={setcount(count + 1)} // Too Many Renders
           onClick={() => {
             // [1]
             // setcount(count + 1);
-            // // [2]
-            // // Trying Single Click Update thrice
+            // // // [2]
+            // // // Trying Single Click Update thrice
             // setcount(count + 1);
             // setcount(count + 1);
             // Show No Error But Update Once

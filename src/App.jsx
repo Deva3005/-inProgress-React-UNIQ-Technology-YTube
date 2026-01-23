@@ -1,15 +1,19 @@
 import A99CheckRoot from "./components/00Components/A99CheckRoot";
 import CheckStyle from "./components/01StylingComponents/CheckStyle";
 import CheckEventsRoot from "./components/02Events/CheckEventsRoot";
-import CheckUseStateRoot from "./components/03UseState/checkUseStateRoot";
+import CheckUseStateRoot from "./components/03UseState/CheckUseStateRoot";
 import CheckCondiRenders from "./components/04ConditionalRenders/CheckCondiRenders";
+import CheckPropParent from "./components/05Properties/CheckPropParent";
+import X01ParentShop from "./components/06ContextAPI/X01ParentShop";
+import X01Lists from "./components/07ListsAndKeys/X01Lists";
 import Workshop00 from "./components/Workshop00";
 
 function App() {
   return (
     <>
+      <h1>🏃‍♂️ React Dev Space is Running 👟</h1>
       {/* 00 Components */}
-      {/* Class[stateful], functional[stateless] */}
+      {/* Class[stateful][extends react get methods], functional[stateless][Hooks to have State Management] */}
       {/* Props :: Properties everything given to Components [parent props are immutable...] */}
       {/* <A99CheckRoot /> */}
 
@@ -28,7 +32,34 @@ function App() {
       {/* <CheckUseStateRoot /> */}
 
       {/* 04 Conditional Rendering */}
-      <CheckCondiRenders />
+      {/* Single Component Conditions use [Ternary Operators or && and Operators] */}
+      {/* Multiple conditions use [if-else or switch] outside the Component return key */}
+      {/* <CheckCondiRenders currentState="Warning" /> */}
+
+      {/* 05 Props | Properties from Parent to Child [read-only data] | 
+          Prop-Drilling [Not Recommended Use Context-API global state management useContext, CreateContext, Context.Producer] | 
+          Prop-Type validation [wont work now in vite dev env]| 
+          Default Props [deprecated] | Default Prop Parameters */}
+      {/* <CheckPropParent /> */}
+
+      {/* 06 Context-API : send data to deep Child Component
+              Global level data
+                Creator : createContext() and Export it [named export]
+                Provider: wrap Context.provider ::> used in Parent Component
+                Consumer: Context.consumer ::> used in Childclass |> UseContext used in Child Functional Component
+            To be good 
+              always useStates instead of normal js variables
+              Use Functional Updater [arrow function wrapped setState]
+              Use Object Destructure to FLEX because Object is not a proper REACT Child...
+            
+      */}
+      {/* <X01ParentShop /> */}
+      {/* 4:00:00 out of 12:55:04 [1/3 Completed...]*/}
+
+      {/* 07 Rendering List and Keys */}
+      {/* Using Higher Order Array methods inside JSX to Iterations and Manipulation */}
+      {/* Keys are Unique Identifier to avoid unwanted re-renders in list */}
+      <X01Lists />
 
       {/* Tryouts... */}
       {/* <Workshop00 /> */}
