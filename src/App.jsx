@@ -8,6 +8,7 @@ import X01ParentShop from "./components/06ContextAPI/X01ParentShop";
 import X01Lists from "./components/07ListsAndKeys/X01Lists";
 import X1ControlledInTodoApp from "./components/08ControlledInputTodoApp/X1ControlledInTodoApp";
 import RoutingRoot from "./components/09Routing/RoutingRoot";
+import CurdRoot from "./components/10Curd/CurdRoot";
 
 import Workshop00 from "./components/Workshop00";
 // ...................................................................
@@ -18,7 +19,7 @@ import X0ClassProps from "./exploreClass/00classProps/X0ClassProps";
 // Project Components
 //....................................................................
 import State from "./projectComponents/workshop/useStateProject/State";
-import TNClassRoot from "./projectComponents/workshop/TNClassProject1/TNClassRoot";
+// import TNClassRoot from "/projectComponents/workshop/TNClassProject1/TNClassRoot";
 
 function App() {
   return (
@@ -103,7 +104,28 @@ function App() {
           [10] useNavigate >> hook to navigate programmatically 
       */}
 
-      <RoutingRoot />
+      {/* <RoutingRoot /> */}
+
+      {/* Objective: Doing CURD ops with JSON-SERVER
+          Create HOME PAGE with Product Summary
+          Create PRODUCT PAGE
+          Create Create, Update PRODUCT
+          Add Delete Product feature
+      */}
+      {/* Things Covered in CURD
+      
+      // PRODUCT PAGE
+      [1] Axios :: get data from local json-server
+      [2] custom Hooks to get data from any URL
+      [3] generating summary via external function
+      [4] passing props to OUTLET achieved via useOutletContext
+      [5] useNavigate : programmatic Navigation
+      [6] useContext for global data supply
+
+
+      [6] CONTROLLED INPUTS : input element values which are controlled by states is known as controlled inputs
+      */}
+      <CurdRoot />
 
       {/* Tryouts... */}
       {/* <Workshop00 /> */}
