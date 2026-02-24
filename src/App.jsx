@@ -121,9 +121,8 @@ function App() {
       [4] passing props to OUTLET achieved via useOutletContext
       [5] useNavigate : programmatic Navigation
       [6] useContext for global data supply
-
-
-      [6] CONTROLLED INPUTS : input element values which are controlled by states is known as controlled inputs
+      [7] CONTROLLED INPUTS : input element values which are controlled by states is known as controlled inputs
+      [8] update,delete,create done in both state and server side
       */}
       <CurdRoot />
 

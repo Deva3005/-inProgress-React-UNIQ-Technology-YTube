@@ -6,6 +6,7 @@ import ProductPage from "./components/Product/ProductPage";
 import CreateUpdateProduct from "./components/Product/CreateUpdateProduct";
 import { createContext, useContext } from "react";
 import useFetchData from "./customHooks/useFetchData.js";
+import UpdateProduct from "./components/Product/UpdateProduct.jsx";
 export const ProductFetch = createContext();
 const CurdRoot = () => {
   const [data, setData] = useFetchData();
@@ -22,6 +23,7 @@ const CurdRoot = () => {
               path="create-update-product"
               element={<CreateUpdateProduct />}
             />
+            <Route path="update-product/:id" element={<UpdateProduct />} />
           </Route>
         </Routes>
       </ProductFetch>
