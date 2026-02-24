@@ -9,6 +9,7 @@ import X01Lists from "./components/07ListsAndKeys/X01Lists";
 import X1ControlledInTodoApp from "./components/08ControlledInputTodoApp/X1ControlledInTodoApp";
 import RoutingRoot from "./components/09Routing/RoutingRoot";
 import CurdRoot from "./components/10Curd/CurdRoot";
+import ReducerRoot from "./components/11Reducer/ReducerRoot";
 
 import Workshop00 from "./components/Workshop00";
 // ...................................................................
@@ -124,7 +125,9 @@ function App() {
       [7] CONTROLLED INPUTS : input element values which are controlled by states is known as controlled inputs
       [8] update,delete,create done in both state and server side
       */}
-      <CurdRoot />
+      {/* <CurdRoot /> */}
+
+      <ReducerRoot />
 
       {/* Tryouts... */}
       {/* <Workshop00 /> */}
